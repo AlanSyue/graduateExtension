@@ -1,32 +1,15 @@
-body#body {
+html {
+    width: 400px;
+    height: auto;
     font-family: sans-serif;
     font-size: 100%;
+
 }
 
-.title {
-    font-size: 24px;
-    padding: 10px;
-    text-align: center;
+h1 {
+    margin-left: 10px;
 }
 
-.title>*:first-child {
-    color: #00b800;
-}
-
-.buttons {
-    text-align: center;
-}
-
-.buttons>button:first-child {
-    margin-right: 10px;
-}
-
-.container {
-    padding: 10px;
-    width: 212px;
-}
-
-.form-item {
-    margin-bottom: 10px;
-    width: 212px;
+.red {
+    color: #E95913;
 }

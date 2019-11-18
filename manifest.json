@@ -13,12 +13,13 @@
     "default_popup": "popup.html"
   },
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "http://127.0.0.1:5000/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://www.google.com.tw/*"
+        "https://ep.cgu.edu.tw/webfolio/*"
       ],
       "js": [
         "execute.js"

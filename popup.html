@@ -1,14 +1,32 @@
 <!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml" style="width:100px;">
+<html xmlns="http://www.w3.org/1999/xhtml" style="width:400px; height: auto;">
   <head>
-    <title>翻轉 google </title>
+    <title>我要畢業！| 畢業學分計算工具 </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <script src="jquery-3.4.1.min.js" ></script>
+    <script src="bootstrap.min.js"></script>
   </head>
 
-  <body id="body">
-    <button id="rotate">翻轉</button>
-    <button id="reset">還原</button>
+  <body>
+    <h1 class="ml-2 mt-2">畢業學分計算工具</h1>
+    <div class="container">
+      <p>使用方式說明：</p>
+      <ol>
+        <li>至長庚大學 E-Portfolio >> <a href="https://ep.cgu.edu.tw/webfolio/Login.aspx?Group=C&Level=S">傳送門</a></li>
+        <li>輸入學號及密碼登入</li>
+        <li>點擊下方按鈕選擇<span class="text-danger">畢業學年<span></li>
+        <li><span class="text-success">自動計算畢業學分！</span></li>
+      </ol>
+    </div>
+    <div class="container">
+      <div class="row align-items-end">
+        <div class="col"><button id="before" class="btn-primary mb-2 ml-2">101-107學年</button></div>
+        <div class="col"><button id="after" class="btn-primary mb-2 ml-2">108學年後</button> </div>
+      </div>
+    </div>
     <script src="./popup.js"></script>
   </body>
 </html>
