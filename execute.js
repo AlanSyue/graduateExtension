@@ -5,14 +5,28 @@ const countCredit = (grade) => {
     Grade: grade
   });
 
+  var result = document.getElementById('login');
+  var resultCSS = "width:900px;height:auto;";
+  resultCSS += "z-index:9999999;";
+  resultCSS += "background: #fff;";
+  resultCSS += "border-radius: 5px;"
+  resultCSS += "margin: 70px auto;";
+  resultCSS += "padding: 20px;";
+  resultCSS += "width: 50%;";
+  resultCSS += "border:5px #0066FF solid;";
+
+  msg = "<h1 style='text-align:center;'>計算學分中，請稍後。。。</h1>";
+  result.innerHTML = "<div style='"+resultCSS+"'>"+msg+"</div>";
+
   var ajax = new XMLHttpRequest()
-  var api = 'http://127.0.0.1:5000/api/count';
-  var resultCSS = "width:900px;height:auto;z-index:9999999;background-color:white;border:5px #FFAC55 solid;"
+  var api = 'https://graduate-tool.herokuapp.com/api/count';
+  
   ajax.onreadystatechange = function(){
     if(ajax.readyState == 4 && ajax.status == 200){
       var msg = ajax.responseText;
-      var result = document.getElementById('login');
-      result.innerHTML = "<div style='"+resultCSS+"'>"+msg+"</div>";
+      var h1 = "<h1>【 計算結果 】</h1>";
+      var h5 = "<h5 style='color:red;'> * 若要返回原始頁面請重新整理</h5><br />";
+      result.innerHTML = "<div style='"+resultCSS+"'>"+h1+msg+h5+"</div>";
     }
   }
 
