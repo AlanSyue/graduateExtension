@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "畢業學分計算工具 | 長庚大學醫管系",
-  "description": "學分不漏算，畢業 94 爽",
+  "description": "長庚大學計算畢業學分小工具",
   "version": "1.0.0",
   "icons": {
     "16": "icon.png",
