@@ -14,7 +14,7 @@
   },
   "permissions": [
     "activeTab",
-    "https://graduate-tool.herokuapp.com/*",
+    "https://graduate-tool.herokuapp.com/*"
   ],
   "content_scripts": [
     {
